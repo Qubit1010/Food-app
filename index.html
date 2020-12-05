@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="overlay" id="overlay">
+      <h3>Searching now...</h3>
+    </div>
+
+    <div class="hero-bg">
+      <section class="top">
+        <header>
+          <a href="#">Deliziosa</a>
+        </header>
+
+        
+        <h1> <span> The Most Famous</span> Foods of Italy</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          cupiditate quia consequuntur repudiandae dolorum nostrum ad, optio
+          sint exercitationem nam natus impedit aut, architecto modi? Nobis
+          accusamus ab exercitationem cumque!
+        </p>
+
+
+        <div class="form-container">
+          <form action="">
+          <div class="form-left">
+            <label for="city">Choose Your City:</label>
+            <input type="text" name="city" id="city">
+            <p>For Example: "Belgium"</p>
+            
+          </div>
+                
+
+            <input type="button" value="Order Now " id="cta-btn">
+             
+          </form>
+        
+        </div>
+      </section>
+    </div>
+
+    
+    
+
+      <section class="bottom">
+          <div class="right-wing">
+              <h2>About Our Service</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil aspernatur explicabo illum doloribus id
+                   deleniti molestias iure eaque, nesciunt totam quis soluta perferendis repellendus
+                   laboriosam expedita esse eveniet dolorum! Voluptas.
+              </p>
+           </div>
+
+
+              <img src="images/pexels-lisa-fotios-1126728.jpg" alt="Picture of our Service">
+              
+          
+      </section>
+
+      <script>
+         let btn = document.getElementById('cta-btn');
+          let overlay = document.getElementById('overlay');
+
+          btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+          })
+      </script>
+    
+  </body>
+</html>
